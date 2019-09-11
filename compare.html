@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/lib/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/lib/owl.carousel/owl.carousel.css" />
+    <link rel="stylesheet" type="text/css" href="assets/lib/jquery-ui/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/global.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<title>Edo - Compare</title>
+</head>
+<body>
+	<!-- header -->
+	<header id="header">
+		
+		<!--_______________ top header__________ -->
+		
+	<div class="top-bar animate-dropdown">
+	  <div class="container">
+		<div class="header-top-inner">
+			<div class="cnt-account">
+				<ul class="list-unstyled">
+					<li><a href="#"><i class="icon fa fa-user"></i>My Account</a></li>
+					<li><a href="wishlist.html"><i class="icon fa fa-heart"></i>Wishlist</a></li>
+					<li><a href="cart.html"><i class="icon fa fa-shopping-cart"></i>My Cart</a></li>
+					<li><a href="checkout.html"><i class="icon fa fa-check"></i>Checkout</a></li>
+					<li><a href="#costumModal5" data-toggle="modal"><i class="icon fa fa-lock"></i>Login</a></li>
+				</ul>
+			</div><!-- /.cnt-account -->
+
+			
+			<div class="clearfix"></div>
+		</div><!-- /.header-top-inner -->
+	</div><!-- /.container -->
+</div>
+		<!-- ..//end top header____________ -->
+		
+	<!-- _________main header__________ -->
+	
+	<div class="main-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-3 logo-holder">
+					<!-- ============================================================= LOGO ============================================================= -->
+<div class="logo">
+	<a href="index.html">
+		
+		<img src="assets/images/RoyaleBazaar.png" alt="" width="180" height="80">
+	</a>
+</div><!-- /.logo -->
+<!-- ============================================================= LOGO : END ============================================================= -->				</div><!-- /.logo-holder -->
+
+				<div class="col-xs-12 col-sm-12 col-md-6 top-search-holder">
+					<!-- /.contact-row -->
+<!-- ============================================================= SEARCH AREA ============================================================= -->
+<div class="search-area">
+    <form>
+        <div class="control-group">
+
+            <input class="search-field" placeholder="Search here...">
+
+            <a class="search-button" href="#"></a>    
+
+        </div>
+    </form>
+</div><!-- /.search-area -->
+<!-- ============================================================= SEARCH AREA : END ============================================================= -->				</div><!-- /.top-search-holder -->
+
+				<div class="col-xs-12 col-sm-12 col-md-3 animate-dropdown top-cart-row">
+					<!-- ============================================================= SHOPPING CART DROPDOWN ============================================================= -->
+
+	 <div class="shopping_cart">							
+					 	<div id="cart" class="btn-shopping-cart">
+  
+  <a data-loading-text="Loading... " class="btn-group top_cart dropdown-toggle" data-toggle="dropdown">
+    <div class="shopcart">
+      <span class="icon-c">
+        <i class="fa fa-cart-plus"></i>
+      </span>
+      <div class="shopcart-inner">
+        <p class="text-shopping-cart">
+
+         My cart
+        </p>
+   
+        <span class="total-shopping-cart cart-total-full">
+           <span class="items_cart">1</span><span class="items_cart2"> Item(s)</span><span class="items_carts"> - Rs.29,990.00 </span> 
+        </span>
+      </div>
+    </div>
+  </a>
+  
+  <!-- <ul class="dropdown-menu pull-right shoppingcart-box">
+        <li>
+      <p class="text-center empty">Your shopping cart is empty!</p>
+    </li>
+      </ul> -->
+      
+     <!--____ when add product in a cart_____ -->
+     
+     <ul class="dropdown-menu pull-right shoppingcart-box"><li class="content-item">
+      <table class="table table-striped" style="margin-bottom:10px;">
+                <tbody><tr>
+          <td class="text-center size-img-cart"> <a href=""><img src="data/option3/ear1.jpeg" alt="Sofa cum bed" title="Sofa cum bed" class="img-thumbnail"></a> </td>
+          <td class="text-left"><a href="">EarRing</a>             </td>
+          <td class="text-right">x1</td>
+          <td class="text-right">Rs.29,990.00</td>
+          <td class="text-center"><button type="button" onclick="cart.remove('3');" title="Remove" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button></td>
+        </tr>
+                      </tbody></table>
+    </li><li>
+		<div class="checkout clearfix">
+		<a href="" class="btn btn-view-cart inverse"> View Cart</a>
+		<a href="" class="btn btn-checkout pull-right">Checkout</a>
+		</div>
+	</li></ul> 
+      
+</div>
+
+					</div>
+
+<!-- ============================================================= SHOPPING CART DROPDOWN : END============================================================= -->				</div><!-- /.top-cart-row -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</div>
+	
+	<!-- __________//end of main header__________ -->	
+	<div class="header-nav animate-dropdown">
+		<div class="container">
+			<div class="row">
+				<!-- main menu-->
+				<div class="main-menu">
+					<div class="container">
+						<div class="row">
+							<nav class="navbar" id="main-menu">
+		                        <div class="container-fluid">
+		                            <div class="navbar-header">
+		                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		                                    <i class="fa fa-bars"></i>
+		                                </button>
+		                                <a class="navbar-brand" href="#">MENU</a>
+		                            </div>
+		                            <div id="navbar" class="navbar-collapse collapse">
+		                                <ul class="nav navbar-nav">
+		                                    <li class="active"><a href="index.html">Home</a></li>
+		                                    <li class="dropdown">
+		                                        <a href="real-jewellery.html" class="dropdown-toggle" data-toggle="dropdown">
+		                                         Real Jewellery </a>
+		                                    </li>
+		                                    <li class="dropdown">
+			                                    <a href="imitation-jewellery.html" class="dropdown-toggle" data-toggle="dropdown">
+			                                    Imitation Jewellery
+			                                    </a>
+		                                    </li>
+		                                    <li class="dropdown">
+		                                        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+												
+		                                        Women Clothing</a>
+		                                           <ul class="dropdown-menu mega_dropdown" role="menu" style="width: 900px;">
+		                                            <li class="block-container col-sm-3 border">
+		                                            	<ul class="block-megamenu-link">
+		                                                    <li class="link_container group_header">
+		                                                        <a href="#">TOP FASHION</a>
+		                                                    </li>
+		                                                    <li class="link_container"><a href="#">Bath & Body</a></li>
+		                                                    <li class="link_container"><a href="#">Makeup</a></li>
+		                                                    <li class="link_container"><a href="#">Creams & Lotions</a></li>
+		                                                    <li class="link_container"><a href="#">Sunscreens</a></li>
+		                                                    <li class="link_container"><a href="#">Face Packs/Facial</a></li>
+		                                                    <li class="link_container"><a href="#">Spa & Body grances</a></li>
+		                                                    <li class="link_container"><a href="#">Women's Hygiene</a></li>
+		                                                </ul>
+		                                            </li>
+		                                             <li class="block-container col-sm-3 border">
+		                                                <ul class="block-megamenu-link">
+		                                                    <li class="link_container group_header">
+		                                                        <a href="#">TOP FASHION</a>
+		                                                    </li>
+		                                                    <li class="link_container"><a href="#">Bath & Body</a></li>
+		                                                    <li class="link_container"><a href="#">Makeup</a></li>
+		                                                    <li class="link_container"><a href="#">Creams & Lotions</a></li>
+		                                                    <li class="link_container"><a href="#">Sunscreens</a></li>
+		                                                    <li class="link_container"><a href="#">Face Packs/Facial</a></li>
+		                                                    <li class="link_container"><a href="#">Spa & Body grances</a></li>
+		                                                    <li class="link_container"><a href="#">Women's Hygiene</a></li>
+		                                                </ul>
+		                                            </li>
+		                                             <li class="block-container col-sm-3 border">
+		                                            	<ul class="block-megamenu-link">
+		                                                    <li class="link_container group_header">
+		                                                        <a href="#">TOP FASHION</a>
+		                                                    </li>
+		                                                    <li class="link_container"><a href="#">Bath & Body</a></li>
+		                                                    <li class="link_container"><a href="#">Makeup</a></li>
+		                                                    <li class="link_container"><a href="#">Creams & Lotions</a></li>
+		                                                    <li class="link_container"><a href="#">Sunscreens</a></li>
+		                                                    <li class="link_container"><a href="#">Face Packs/Facial</a></li>
+		                                                    <li class="link_container"><a href="#">Spa & Body grances</a></li>
+		                                                    <li class="link_container"><a href="#">Women's Hygiene</a></li>
+		                                                </ul>
+		                                            </li>
+		                                             <li class="block-container col-sm-3">
+		                                            	<ul class="block-megamenu-link">
+		                                                    <li class="link_container group_header">
+		                                                        <a href="#">TOP FASHION</a>
+		                                                    </li>
+		                                                    <li class="link_container"><a href="#">Bath & Body</a></li>
+		                                                    <li class="link_container"><a href="#">Makeup</a></li>
+		                                                    <li class="link_container"><a href="#">Creams & Lotions</a></li>
+		                                                    <li class="link_container"><a href="#">Sunscreens</a></li>
+		                                                    <li class="link_container"><a href="#">Face Packs/Facial</a></li>
+		                                                    <li class="link_container"><a href="#">Spa & Body grances</a></li>
+		                                                    <li class="link_container"><a href="#">Women's Hygiene</a></li>
+		                                                </ul>
+		                                            </li>
+		                                        </ul>
+		                                    </li>
+		                                    <li class="dropdown">
+		                                        <a href="" class="dropdown-toggle" data-toggle="dropdown">Gifts</a>
+		                                        <ul class="dropdown-menu mega_dropdown" role="menu" style="width: 900px;">
+		                                            <li class="block-container col-sm-3 border">
+		                                            	<ul class="block-megamenu-link">
+		                                                    <li class="link_container group_header">
+		                                                        <a href="#">TOP FASHION</a>
+		                                                    </li>
+		                                                    <li class="link_container"><a href="#">Bath & Body</a></li>
+		                                                    <li class="link_container"><a href="#">Makeup</a></li>
+		                                                    <li class="link_container"><a href="#">Creams & Lotions</a></li>
+		                                                    <li class="link_container"><a href="#">Sunscreens</a></li>
+		                                                    <li class="link_container"><a href="#">Face Packs/Facial</a></li>
+		                                                    <li class="link_container"><a href="#">Spa & Body grances</a></li>
+		                                                    <li class="link_container"><a href="#">Women's Hygiene</a></li>
+		                                                </ul>
+		                                            </li>
+		                                             <li class="block-container col-sm-3 border">
+		                                                <ul class="block-megamenu-link">
+		                                                    <li class="link_container group_header">
+		                                                        <a href="#">TOP FASHION</a>
+		                                                    </li>
+		                                                    <li class="link_container"><a href="#">Bath & Body</a></li>
+		                                                    <li class="link_container"><a href="#">Makeup</a></li>
+		                                                    <li class="link_container"><a href="#">Creams & Lotions</a></li>
+		                                                    <li class="link_container"><a href="#">Sunscreens</a></li>
+		                                                    <li class="link_container"><a href="#">Face Packs/Facial</a></li>
+		                                                    <li class="link_container"><a href="#">Spa & Body grances</a></li>
+		                                                    <li class="link_container"><a href="#">Women's Hygiene</a></li>
+		                                                </ul>
+		                                            </li>
+		                                             <li class="block-container col-sm-3 border">
+		                                            	<ul class="block-megamenu-link">
+		                                                    <li class="link_container group_header">
+		                                                        <a href="#">TOP FASHION</a>
+		                                                    </li>
+		                                                    <li class="link_container"><a href="#">Bath & Body</a></li>
+		                                                    <li class="link_container"><a href="#">Makeup</a></li>
+		                                                    <li class="link_container"><a href="#">Creams & Lotions</a></li>
+		                                                    <li class="link_container"><a href="#">Sunscreens</a></li>
+		                                                    <li class="link_container"><a href="#">Face Packs/Facial</a></li>
+		                                                    <li class="link_container"><a href="#">Spa & Body grances</a></li>
+		                                                    <li class="link_container"><a href="#">Women's Hygiene</a></li>
+		                                                </ul>
+		                                            </li>
+		                                             <li class="block-container col-sm-3">
+		                                            	<ul class="block-megamenu-link">
+		                                                    <li class="link_container group_header">
+		                                                        <a href="#">TOP FASHION</a>
+		                                                    </li>
+		                                                    <li class="link_container"><a href="#">Bath & Body</a></li>
+		                                                    <li class="link_container"><a href="#">Makeup</a></li>
+		                                                    <li class="link_container"><a href="#">Creams & Lotions</a></li>
+		                                                    <li class="link_container"><a href="#">Sunscreens</a></li>
+		                                                    <li class="link_container"><a href="#">Face Packs/Facial</a></li>
+		                                                    <li class="link_container"><a href="#">Spa & Body grances</a></li>
+		                                                    <li class="link_container"><a href="#">Women's Hygiene</a></li>
+		                                                </ul>
+		                                            </li>
+		                                        </ul> 
+		                                    </li>
+		                                    
+		                                </ul>
+		                                
+		                            </div><!--/.nav-collapse -->
+		                        </div>
+		                    </nav>
+						</div>
+					</div>
+				</div>
+				<!-- ./main menu-->
+			</div>
+		</div>
+	</div>
+	</header>
+	<!-- ./header -->
+	<div class="container">
+		<div class="row">
+			<div class="block block-breadcrumbs">
+				<ul>
+					<li class="home">
+						<a href="#"><i class="fa fa-home"></i></a>
+						<span></span>
+					</li>
+					<li>Compare products</li>
+				</ul>
+			</div>
+			<div class="main-page">
+				<h1 class="page-title">Compare Products</h1>
+				<div class="page-content">
+		            <table class="table table-bordered table-compare">
+		                <tbody><tr>
+		                    <td class="compare-label">Product Image</td>
+		                    <td class="text-center">
+		                        <a href="#"><img src="data/p16.jpg" alt="Product"></a>
+		                    </td>
+		                    <td class="text-center">
+		                        <a href="#"><img src="data/p17.jpg" alt="Product"></a>
+		                    </td>
+		                    <td class="text-center">
+		                        <a href="#"><img src="data/p18.jpg" alt="Product"></a>
+		                    </td>
+		                    
+		                </tr>
+		                <tr>
+		                    <td class="compare-label">Product Name</td>
+		                    <td>
+		                        <a href="#">Perfomax</a>
+		                    </td>
+		                    <td>
+		                        <a href="#">Perfomax</a>
+		                    </td>
+		                    <td>
+		                        <a href="#">Perfomax</a>
+		                    </td>
+		                </tr>
+		                <tr>
+		                    <td class="compare-label">Rating</td>
+		                    <td>
+		                        <div class="product-star">
+		                            <i class="fa fa-star"></i>
+		                            <i class="fa fa-star"></i>
+		                            <i class="fa fa-star"></i>
+		                            <i class="fa fa-star"></i>
+		                            <i class="fa fa-star-half-o"></i>
+		                            <span>(3 Reviews)</span>
+		                        </div>
+		                    </td>
+		                    <td>
+		                        <div class="product-star">
+		                            <i class="fa fa-star"></i>
+		                            <i class="fa fa-star"></i>
+		                            <i class="fa fa-star"></i>
+		                            <i class="fa fa-star"></i>
+		                            <i class="fa fa-star-half-o"></i>
+		                            <span>(3 Reviews)</span>
+		                        </div>
+		                    </td>
+		                    <td>
+		                        <div class="product-star">
+		                            <i class="fa fa-star"></i>
+		                            <i class="fa fa-star"></i>
+		                            <i class="fa fa-star"></i>
+		                            <i class="fa fa-star"></i>
+		                            <i class="fa fa-star-half-o"></i>
+		                            <span>(3 Reviews)</span>
+		                        </div>
+		                    </td>
+		                </tr>
+		                <tr>
+		                    <td class="compare-label">Price</td>
+		                    <td class="price">$20</td>
+		                    <td class="price">$21</td>
+		                    <td class="price">$20.5</td>
+		                </tr>
+		                <tr>
+		                    <td class="compare-label">Description</td>
+		                    <td>Printed evening dress with straight sleeves with black thin waist belt and ruffled linings.</td>
+		                    <td>Printed evening dress with straight sleeves with black thin waist belt and ruffled linings.</td>
+		                    <td>Printed evening dress with straight sleeves with black thin waist belt and ruffled linings.</td>
+		                </tr>
+		                <tr>
+		                    <td class="compare-label">Manufacturer</td>
+		                    <td>CUCGU</td>
+		                    <td>Nakia</td>
+		                    <td>Gola</td>
+		                </tr>
+		                <tr>
+		                    <td class="compare-label">Availability</td>
+		                    <td class="instock">Instock (20 items)</td>
+		                    <td class="outofstock">Out of stock</td>
+		                    <td class="instock">Instock (20 items)</td>
+		                </tr>
+		                <tr>
+		                    <td class="compare-label">SKU</td>
+		                    <td>#873289</td>
+		                    <td>#874389</td>
+		                    <td>#874389</td>
+		                </tr>
+		                <tr>
+		                    <td class="compare-label">Size</td>
+		                    <td>X</td>
+		                    <td>XL</td>
+		                    <td>XS</td>
+		                </tr>
+		                <tr>
+		                    <td class="compare-label">Color</td>
+		                    <td>Blue</td>
+		                    <td>Blue</td>
+		                    <td>Blue</td>
+		                </tr>
+		                <tr>
+		                    <td class="compare-label">Weight</td>
+		                    <td>0.3kg</td>
+		                    <td>0.3kg</td>
+		                    <td>0.3kg</td>
+		                </tr>
+		                <tr>
+		                    <td class="compare-label">Dimensions</td>
+		                    <td>40x20x72cm</td>
+		                    <td>40x20x72cm</td>
+		                    <td>40x20x72cm</td>
+		                </tr>
+		                <tr>
+		                    <td class="compare-label">Action</td>
+		                    <td class="action">
+		                        <button class="add-cart button button-sm">Add to cart</button>
+		                        <button class="button button-sm"><i class="fa fa-heart-o"></i></button>
+		                        <button class="button button-sm"><i class="fa fa-close"></i></button>
+		                    </td>
+		                    <td class="action">
+		                        <button class="add-cart button button-sm">Add to cart</button>
+		                        <button class="button button-sm"><i class="fa fa-heart-o"></i></button>
+		                        <button class="button button-sm"><i class="fa fa-close"></i></button>
+		                    </td>
+		                    <td class="action">
+		                        <button class="add-cart button button-sm">Add to cart</button>
+		                        <button class="button button-sm"><i class="fa fa-heart-o"></i></button>
+		                        <button class="button button-sm"><i class="fa fa-close"></i></button>
+		                    </td>
+		                </tr>
+		            </tbody></table>
+		        </div>
+			</div>
+		</div>
+
+	</div>
+	<!-- footer -->
+	<footer id="footer">
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="row">
+						<div class="col-sm-12 col-md-4">
+							<div class="block footer-block-box">
+								<div class="block-head">
+									<div class="block-title">
+										<div class="block-icon">
+											<img src="data/location-icon.png" alt="store icon">
+										</div>
+										<div class="block-title-text text-sm">FIND A</div>
+										<div class="block-title-text text-lg">edo store</div>
+									</div>
+								</div>
+								<div class="block-inner">
+									<div class="block-info clearfix">
+										Enter your zip code, city or country to find the closest EDO Store near you!
+									</div>
+									<div class="block-input-box box-radius clearfix">
+										<input type="text" class="input-box-text" placeholder="Zip code, City, Country">
+										<button class="block-button">Go</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-4">
+							<div class="block footer-block-box">
+								<div class="block-head">
+									<div class="block-title">
+										<div class="block-icon">
+											<img src="data/email-icon.png" alt="store icon">
+										</div>
+										<div class="block-title-text text-sm">SUBSCRIBE TO</div>
+										<div class="block-title-text text-lg">edo shop EMAILS</div>
+									</div>
+								</div>
+								<div class="block-inner">
+									<div class="block-info clearfix">
+										Lorem Ipsum is simply dummy text of the printing and typesetting industry
+									</div>
+									<div class="block-input-box box-radius clearfix">
+										<input type="text" class="input-box-text" placeholder="Email address">
+										<button class="block-button">Go</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-4">
+							<div class="block footer-block-box">
+								<div class="block-head">
+									<div class="block-title">
+										<div class="block-icon">
+											<img src="data/partners-icon.png" alt="store icon">
+										</div>
+										<div class="block-title-text text-sm">our</div>
+										<div class="block-title-text text-lg">partners</div>
+									</div>
+								</div>
+								<div class="block-inner">
+									<div class="block-owl">
+										<ul class="kt-owl-carousel list-partners" data-nav="true" data-autoplay="true" data-loop="true" data-items="1">
+											<li class="partner"><a href="#"><img src="data/partner1.jpg" alt="partner"></a></li>
+											<li class="partner"><a href="#"><img src="data/partner2.jpg" alt="partner"></a></li>
+											<li class="partner"><a href="#"><img src="data/partner3.jpg" alt="partner"></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-middle">
+			<div class="container">
+				<div class="row">
+					<div class="row">
+						<div class="col-md-2 col-sm-4 block-link-wapper">
+							<div class="block-link">
+								<ul class="list-link">
+									<li class="head"><a href="#">Buyer Central</a></li>
+									<li><a href="#">Sign in</a></li>
+									<li><a href="#">News</a></li>
+									<li><a href="#">Buyer Protection</a></li>
+									<li><a href="#">Payment Options</a></li>
+									<li><a href="#">EMI Payment</a></li>
+									<li><a href="#">Shipping Policy</a></li>
+									<li><a href="#">Return Policy</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-4 block-link-wapper">
+							<div class="block-link">
+								<ul class="list-link">
+									<li class="head"><a href="#">Merchant Central</a></li>
+									<li><a href="#">Merchant Sign In</a></li>
+									<li><a href="#">Merchant Registration</a></li>
+									<li><a href="#">How Does It Work</a></li>
+									<li><a href="#">Pricing</a></li>
+									<li><a href="#">Fulfillment by ShopClues</a></li>
+									<li><a href="#">Merchant Tools</a></li>
+									<li><a href="#">Best Practice</a></li>
+								 </ul>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-4 block-link-wapper">
+							<div class="block-link">
+								<ul class="list-link">
+									<li class="head"><a href="#">Information</a></li>
+									<li><a href="#">About Us</a></li>
+									<li><a href="#">Band of Trust</a></li>
+									<li><a href="#">ShopClues History</a></li>
+									<li><a href="#">News</a></li>
+									<li><a href="#">In the Press</a></li>
+									<li><a href="#">Awards New</a></li>
+									<li><a href="#">Careers</a></li>
+								 </ul>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-4 block-link-wapper">
+							<div class="block-link">
+								<ul>
+									<li class="head"><a href="#">Contact Us</a></li>
+									<li><a href="#">Customer Support</a></li>
+									<li><a href="#">Merchant Support</a></li>
+									<li><a href="#">Merchant Inquiries</a></li>
+									<li><a href="#">Product Reviews</a></li>
+									<li><a href="#">Brand Inquiries</a></li>
+									<li><a href="#">Bulk Orders</a></li>
+									<li><a href="#">Contact Us</a></li>
+								 </ul>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-4 block-link-wapper">
+							<div class="block-link">
+								<ul class="list-link">
+									<li class="head"><a href="#">help</a></li>
+									<li><a href="#">See all Help</a></li>
+									<li><a href="#">My Account</a></li>
+									<li><a href="#">FAQs</a></li>
+								 </ul>
+								 <ul>
+								 	<li class="head"><a href="#">OTHER SERVICES</a></li>
+									<li><a href="#">Market America Gear</a></li>
+									<li><a href="#">Apply for Market</a></li>
+									<li><a href="#">America Credit Card</a></li>
+								 </ul>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-4 block-link-wapper">
+							<div class="block-link">
+								<ul class="list-link flag">
+									<li class="head"><a href="#">INTERNATIONAL SHOPPING</a></li>
+									<li><a href="#"><img src="data/flag1.png" alt="flang">Customer Support</a></li>
+									<li><a href="#"><img src="data/flag2.png" alt="flang">Canada</a></li>
+									<li><a href="#"><img src="data/flag3.png" alt="flang">Mexico</a></li>
+									<li><a href="#"><img src="data/flag4.png" alt="flang">United Kingdom</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-social">
+			<div class="container">
+				<div class="row">
+					<div class="block-social">
+						<ul class="list-social">
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#"><i class="fa fa-vimeo-square"></i></a></li>
+							<li><a href="#"><i class="fa fa-pied-piper"></i></a></li>
+							<li><a href="#"><i class="fa fa-skype"></i></a></li>
+						</ul>
+					</div>
+					<div class="block-payment">
+						<ul class="list-logo">
+							<li><a href="#"><img src="data/payment1.png" alt="Payment Logo"></a></li>
+							<li><a href="#"><img src="data/payment2.png" alt="Payment Logo"></a></li>
+							<li><a href="#"><img src="data/payment3.png" alt="Payment Logo"></a></li>
+							<li><a href="#"><img src="data/payment4.png" alt="Payment Logo"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="block-coppyright">
+						© 2015 Edo Demo Store. All Rights Reserved.
+					</div>
+					<div class="block-shop-phone">
+						Shop by phone <strong>1-899-353-2268</strong>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- ./footer -->
+	<a href="#" class="scroll_top" title="Scroll to Top" style="display: inline;">Scroll</a>
+	<script type="text/javascript" src="assets/lib/jquery/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/lib/jquery.bxslider/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="assets/lib/owl.carousel/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="assets/lib/jquery-ui/jquery-ui.min.js"></script>
+	<!-- COUNTDOWN -->
+	<script type="text/javascript" src="assets/lib/countdown/jquery.plugin.js"></script>
+	<script type="text/javascript" src="assets/lib/countdown/jquery.countdown.js"></script>
+	<!-- ./COUNTDOWN -->
+	<script type="text/javascript" src="assets/js/jquery.actual.min.js"></script>
+	<script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+
+</html>
